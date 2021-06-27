@@ -1,0 +1,27 @@
+#Categories {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-top: 10%;
+    align-content: space-between;
+    .btn-cat {
+        text-align: left;
+        font-family: $family;
+        background-color: $color-3;
+        border: 2px dashed $color-1;
+        color: $color-1;
+        border-radius: 0px 141px 141px 0px;
+        width: 60%;
+        font-size: 1.8em;
+        padding: 2px 20px 2px 20px;
+        &:hover {
+            width: 65%;
+            color: $color-4;
+            // border-color: white;
+            -webkit-box-shadow: 6px -2px 16px 4px rgba(255,255,255,0.56);
+            -moz-box-shadow: 6px -2px 16px 4px rgba(255,255,255,0.56);
+            box-shadow: 6px -2px 16px 4px rgba(255,255,255,0.56);
+        }
+    }
+}

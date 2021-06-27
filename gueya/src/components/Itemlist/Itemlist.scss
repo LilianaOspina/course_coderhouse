@@ -1,0 +1,9 @@
+@import "../../assets/styles/bases.scss";
+
+#itemlist {
+    display: flex;
+    height: 60vh;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-content: space-evenly;
+}

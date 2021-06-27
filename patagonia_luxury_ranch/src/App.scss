@@ -1,0 +1,41 @@
+$family-0: "Bebas Neue", cursive;
+$family-1: "Aleo", serif;
+$family-2: "Anonymous Pro", monospace;
+$family-3: "Arial", serif;
+
+$color-0: #000000;
+$color-1: #ffffff;
+$color-2: #e16c58;
+
+body {
+    background-color: $color-0;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration-line: none;
+}
+
+.button__next {
+    padding-top: 3.3em;
+    width: 100%;
+    color: $color-1;
+    background-color: none;
+}
+.next__icon {
+    width: 2.8em;
+    color: $color-1;
+    animation: bounce;
+}
+
+@import "./components/Navbar/Navbar.scss";
+@import "./container/Intro/Intro.scss";
+@import "./container/Article/Article.scss";
+@import "./container/Project/Project.scss";
+@import "./container/Extras/Extras.scss";
+@import "./container/Accomodations/Accomodations.scss";
+@import "./container/Cuisine/Cuisine.scss";
+@import "./container/Garden/Garden.scss";
+@import "./container/Experiences/Experiences.scss";
+@import "./components/Footer/Footer.scss";

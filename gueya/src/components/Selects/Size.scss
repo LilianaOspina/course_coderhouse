@@ -1,0 +1,12 @@
+@import "../../assets/styles/bases.scss";
+
+.select__size {
+    @extend .select__box;
+    background-color: $g1;
+    @include font($font3, 2.4rem, 400, 1px, $white);
+    option {
+        width: 50%;
+        @include font($font3, 2rem, 400, 1px, $white);
+        background-color: $g1;
+    }
+}

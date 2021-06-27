@@ -1,0 +1,45 @@
+@import "../../assets/styles/bases.scss";
+
+.viewbox {
+    //flex column
+    position: relative;
+    @include sizes(50rem, 55vh);
+    background-color: $g1;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px 1px $g1;
+
+    display: flex;
+    flex-flow: column wrap;
+
+    .viewbox__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        justify-content: space-evenly;
+        .item__photo {
+            @include sizes(90%, 40rem);
+            border-radius: 30px;
+        }
+    }
+    .viewbox__detail {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2%;
+        box-sizing: border-box;
+
+        .viewbox__title {
+            @include font($font2, 4rem, 400, 2px, $black);
+        }
+        .viewbox__price {
+            @include font($font3, 3.5rem, 400, 2px, $black);
+        }
+        .viewbox__icon {
+            font-size: 8rem;
+            color: $white;
+        }
+    }
+}

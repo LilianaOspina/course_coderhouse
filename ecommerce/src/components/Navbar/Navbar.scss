@@ -1,0 +1,41 @@
+#Navbar{
+    background-color: $color-3;
+    .nb-marca {
+        color: $color-1;
+        font-family: $family;
+        font-size: 40px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .nb-links {
+        font-size: 20px;
+    }
+    .nb-menu{
+        border-color: $color-1;
+        background-color: $color-3;
+        min-width: 15rem;
+    }
+    .nb-list{
+        color: $color-2;
+        &:hover{
+            color: $color-3;
+        }
+    }
+    .btn-style{
+        color: $color-1;
+        border-color: $color-1;
+        font-family: $family;
+        font-size: 1.5em;
+        padding: 0.5px 15px 0.5px 15px;
+        &:hover{
+            background-color: $color-1;
+            color: $color-3;
+        }
+    }
+    .fa-shopping-cart{
+        padding: 10px;
+        &:hover{
+            color: $color-1
+        }
+    }
+}

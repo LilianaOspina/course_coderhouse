@@ -1,0 +1,21 @@
+@import "../../assets/styles/bases.scss";
+
+.counter {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.5% 0;
+    border: 1px solid $white;
+    border-radius: 10px;
+    .counter__icon {
+        font-size: 3rem;
+        color: white;
+        align-items: center;
+        cursor: pointer;
+    }
+    .counter__num {
+        font-size: 3rem;
+        color: $white;
+    }
+}

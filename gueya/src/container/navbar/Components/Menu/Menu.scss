@@ -1,0 +1,22 @@
+@import "/src/assets/styles/bases.scss";
+
+.nav__menulist {
+    @include sizes(100%, 7vh);
+    justify-content: center;
+    @include flex(flex, nowrap row);
+    @include mquery(phone) {
+        display: none;
+    }
+    @include mquery(tup) {
+        display: none;
+    }
+    .nav__list {
+        @include font($font3, 2rem, 300, 3px, $black);
+        list-style: none;
+        width: 25%;
+        border-right: 1px solid $g3;
+        border-left: 1px solid $g3;
+        align-self: center;
+        text-align: center;
+    }
+}

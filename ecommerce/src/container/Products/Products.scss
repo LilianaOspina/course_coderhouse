@@ -1,0 +1,114 @@
+.Products{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 10%;
+    flex-flow: row wrap;
+    margin-left: 30%;
+    max-width: 60%;
+    .cont-products{    
+        background-image: $bg-1;
+        border: 1px solid $color-1;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        border-radius: 3%;
+        width: 100%;
+        max-height: 17em;
+        transition: transform 450ms;
+
+        &:hover{
+            transform: scale(1.08);
+            // -webkit-box-shadow: 3px 3px 26px 11px rgba(240,154,196,0.75);
+            // -moz-box-shadow: 3px 3px 26px 11px rgba(240,154,196,0.75);
+            // box-shadow: 3px 3px 26px 11px rgba(240,154,196,0.75);
+            p{
+                color: $color-4;
+            }
+        }
+        p{
+            font-family: $family;
+            color: $color-3;
+            font-size: 1.6em;
+            font-weight: 500;
+            margin-bottom: 0rem !important;
+        }
+
+        .img-product{
+            object-fit: cover;
+            width: 100%;
+            max-height: 8em;
+            border-radius: 5%;
+            height: 220px;
+            margin-top: 13px !important;
+            -webkit-box-shadow: 3px -1px 28px 4px rgba(0,0,0,0.88);
+            -moz-box-shadow: 3px -1px 28px 4px rgba(0,0,0,0.88);
+            box-shadow: 3px -1px 28px 4px rgba(0,0,0,0.88);
+
+        }
+        .size{
+            font-family: $family;
+            font-size: 1.5em;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: -0.2em;
+            max-height: 1.3em;
+            .boxSizes{
+                background-image:$bg-1;
+                font-family: $family-2;
+                appearance: none;
+                border: none;
+                option {
+                    background-color: $color-1;
+                    font-size: 0.9em;
+                    padding: 0;
+                }
+            }
+        }
+        .counter-shop{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+            box-sizing: border-box;
+            justify-content: space-evenly;
+            background-color: $color-1;
+            border-radius: 60px;
+            margin-bottom: 10px;
+            border-radius: 200px 200px 200px 169px;
+            -moz-border-radius: 200px 200px 200px 169px;
+            -webkit-border-radius: 200px 200px 200px 169px;
+            // border: 5px dashed $color-3;
+            height: 45px;
+            .cant{
+                color: $color-3;
+                font-size: 0.9em;
+            }
+            button{
+                background-color: $color-1;
+                border: 0;
+                padding: 0;
+                font-size: 0.9em;
+                color: $color-3;
+                &:hover{
+                    color: $color-4;
+                }
+            }
+        }
+        .addCart{
+            margin-bottom: 1.3em;
+            background-color: $color-3;
+            border: 1px solid $color-1;
+            font-size: 0.6em;
+            color: $color-1;
+            border-radius: 200px 200px 200px 169px;
+            -moz-border-radius: 200px 200px 200px 169px;
+            -webkit-border-radius: 200px 200px 200px 169px;
+            &:hover{
+                background-color: $color-4;
+                color: $color-3;
+            }
+        }
+    }
+    
+}

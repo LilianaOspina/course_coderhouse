@@ -1,0 +1,95 @@
+#accomodations {
+    width: 100%;
+    // height: 100vh;
+}
+.acc__brand {
+    text-align: center;
+    padding-top: 2em;
+    font-size: 2.5em;
+}
+.acc__title {
+    font-family: $family-0;
+    color: $color-2;
+    text-align: center;
+    font-size: 5.2em;
+    letter-spacing: 10px;
+    font-weight: 505;
+    padding-bottom: 0.3em;
+}
+.acc__line {
+    width: 50%;
+    height: 1em;
+    background-color: $color-2;
+    margin: 0 auto 0 auto;
+    display: block;
+}
+.acc__boxes {
+    display: flex;
+    padding-top: 2em;
+    width: 100%;
+    justify-content: center;
+}
+.acc__box {
+    background-color: $color-2;
+    box-sizing: border-box;
+    padding-top: 25px;
+    margin: 0 2em;
+    // font-weight: 500;
+    font-size: 1.3em;
+}
+.box__title {
+    font-family: $family-2;
+    font-size: 1.3em;
+    color: $color-0;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.box__text1 {
+    color: $color-1;
+    font-family: $family-3;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.box__text2 {
+    color: $color-0;
+    text-align: center;
+}
+.acc__contlist {
+    margin: 7% 10%;
+    color: $color-1;
+    font-family: $family-1;
+}
+.acc__list {
+    color: $color-1;
+    li {
+        padding: 5px;
+        font-weight: bold;
+        font-size: 1.6em;
+    }
+}
+.acc__subtitle {
+    font-family: $family-1;
+    font-style: italic;
+    font-weight: bold;
+}
+.acc__contimg {
+    position: relative;
+    margin-bottom: 20px;
+}
+.acc__img {
+    width: 100%;
+    object-fit: cover;
+    margin: auto;
+    height: 100%;
+    max-height: 60vh;
+}
+.ad {
+    font-family: $family-1;
+    color: $color-1;
+    font-size: 1.4em;
+    font-weight: bold;
+    right: 10%;
+    position: absolute;
+    bottom: 10%;
+    z-index: 10;
+}

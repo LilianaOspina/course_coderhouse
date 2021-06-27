@@ -1,0 +1,15 @@
+@import "/src/assets/styles/bases.scss";
+
+.nav__banner {
+    @include sizes(100%, 5vh);
+    background-color: $g1;
+    display: flex;
+    justify-content: center;
+    .nav__bannertext {
+        align-self: center;
+        @include font($font3, 1.9rem, 300, 6px, $g3);
+        @include mquery(phone) {
+            font-size: 1.4rem;
+        }
+    }
+}

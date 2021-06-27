@@ -1,0 +1,41 @@
+#project {
+    width: 100%;
+    height: 100vh;
+    padding-top: 10vh;
+}
+.project__cont {
+    width: 100%;
+    max-height: 75vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.project__text {
+    color: $color-1;
+    font-size: 1em;
+    text-align: center;
+    font-family: $family-1;
+    font-weight: lighter;
+    line-height: 20px;
+    padding-top: 10px;
+}
+.carousel__items {
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+.carousel__title {
+    color: $color-2;
+    text-align: center;
+    font-size: 1.2em;
+}
+.carousel__slide {
+    width: 100%;
+    padding-top: 10px;
+}
+.carousel__img {
+    margin: auto;
+    height: 25vh;
+    width: 100%;
+    object-fit: cover;
+}
+

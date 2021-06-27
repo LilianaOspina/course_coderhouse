@@ -1,0 +1,30 @@
+#Navbar {
+  width: 100%;
+  height: 15vh;
+  background: #000000;
+}
+
+#Navbar .Navbar__nav {
+  display: flex;
+  justify-content: flex-end;
+  color: #d8dde1;
+  font-size: 1.3em;
+  width: 680px;
+  font-family: 'Aleo', serif;
+  letter-spacing: 2px;
+}
+
+#Navbar .Navbar__link {
+  color: white !important;
+  padding-right: 2em !important;
+  margin-right: 25px;
+  margin-left: 25px;
+  border-right-style: none;
+}
+
+#Navbar .Navbar__brand {
+  color: white !important;
+  font-size: 2em;
+  letter-spacing: 7px;
+  font-family: 'Bebas Neue', cursive;
+}

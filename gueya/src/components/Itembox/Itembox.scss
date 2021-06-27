@@ -1,0 +1,25 @@
+@import "../../assets/styles/bases.scss";
+
+.itembox {
+    position: relative;
+    width: 25%;
+    background-color: $g1;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px 1px $g1;
+
+    display: flex;
+    flex-flow: row wrap;
+
+    padding: 3%;
+
+    .itembox__photo {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .itembox__title {
+        @include font($font2, 4rem, 400, 2px, $black);
+    }
+    .itembox__price {
+        @include font($font3, 3.5rem, 400, 2px, $black);
+    }
+}

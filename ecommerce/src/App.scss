@@ -1,0 +1,57 @@
+$color-1: #f09ac4;
+$color-2: #ab94a0;
+$color-3: #010101;
+$color-4: #FFFFFF;
+
+$family: 'Sacramento', sans-serif;
+$family-2: Arial, sans-serif;
+$bg-1: url('http://api.thumbr.it/whitenoise-400x600.png?background=f09ac4ff&noise=010101&density=14&opacity=43');
+
+@import './components/Navbar/Navbar.scss'; 
+@import './container/Categories/Categories.scss';
+@import './container/Products/Products.scss';
+@import './container/Banner/Banner.scss'; 
+@import './container/Newin/Newin.scss';
+@import './components/Form/Form.scss';
+
+.App {
+  background-image: url("./assets/persons-linguerie.jpg");
+  background-size: cover;
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+

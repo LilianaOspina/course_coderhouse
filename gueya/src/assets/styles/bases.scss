@@ -1,0 +1,113 @@
+//Variables de colores
+$g1: #b7cdb6;
+$g2: #a3b9a2;
+$g3: #81ab93;
+$pink: #d2bec9;
+$yellow: #e0e19b;
+$white: #ffffff;
+$black: #000000;
+
+//Variables de Fonts
+$font1: "Stardos Stencil", cursive;
+$font2: "Sacramento", cursive;
+$font3: "Josefin Sans", sans-serif;
+
+//paste on app.css code *
+
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin padding($top, $right, $bottom, $left) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
+
+@mixin font($fam, $sz, $weight, $ls, $colr) {
+    font-family: $fam;
+    font-size: $sz;
+    font-weight: $weight;
+    letter-spacing: $ls;
+    color: $colr;
+}
+//flow es dir-wrap
+@mixin flex($dp, $flow) {
+    display: $dp;
+    flex-flow: $flow;
+}
+
+//mediaQuerys
+
+@mixin mquery($size) {
+    @if $size == phone {
+        @media (max-width: 499px) {
+            @content;
+        }
+    } @else if $size == tup {
+        @media (min-width: 500px) and (max-width: 799px) {
+            @content;
+        }
+    } @else if $size == tland {
+        @media (min-width: 800px) and (max-width: 1199px) {
+            @content;
+        }
+    } @else if $size == desk {
+        @media (min-width: 1200px) and (max-width: 1799px) {
+            @content;
+        }
+    } @else if $size == bigdesk {
+        @media (min-width: 1800px) {
+            @content;
+        }
+    }
+}
+.close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 3.5rem;
+    color: $g3;
+    cursor: pointer;
+}
+
+.bt-g1 {
+    background-color: $g1;
+}
+.select__box {
+    display: flex;
+    padding: 3% 10%;
+    border-radius: 10px;
+}
+
+//gridsystem
+
+@for $i from 1 through 12 {
+    @include mquery (phone){
+        .col-#{$i} {
+            width: $i * 8.33%;
+        };
+    }
+    @include mquery (tup){
+        .col-s-#{$i} {
+            width: $i * 8.33%;
+        };
+    }
+    @include mquery (tland){
+        .col-m-#{$i} {
+            width: $i * 8.33%;
+        };
+    }
+    @include mquery (desk){
+        .col-l-#{$i} {
+            width: $i * 8.33%;
+        }
+    }
+    @include mquery (bigdesk){
+        .col-xl-#{$i} {
+            width: $i * 8.33%;
+        }
+    }
+}

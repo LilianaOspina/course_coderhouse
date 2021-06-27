@@ -1,0 +1,11 @@
+@import "/src/assets/styles/bases.scss";
+
+.nav__logo {
+    @include sizes(100%, 18vh);
+    @include mquery(phone) {
+        @include sizes(25%, 15vh);
+    }
+    @include mquery(tup) {
+        @include sizes(35%, 15vh);
+    }
+}

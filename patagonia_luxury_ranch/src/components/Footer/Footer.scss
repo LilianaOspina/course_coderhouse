@@ -1,0 +1,12 @@
+#footer{
+    background-color: $color-2;
+    height: 10vh;
+    display: flex;
+}
+.footer__text{
+    width: 100vw;
+    padding-top: 20px;
+    font-family: $family-1;
+    font-size: 1.4em;
+    text-align: center;
+}

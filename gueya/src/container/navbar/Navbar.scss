@@ -1,0 +1,40 @@
+@import "../../assets/styles/bases.scss";
+
+.nav__bar {
+    position: relative;
+    @include sizes(100%, 30vh);
+    background-color: $white;
+    box-shadow: 0px -10px 5px 13px $g1;
+    @include mquery(phone) {
+        @include sizes(100%, 20vh);
+    }
+    @include mquery(tup) {
+        @include sizes(100%, 20vh);
+    }
+    .nav__tools {
+        position: fixed;
+        right: 1vw;
+        top: 8vh;
+        @include flex(flex, row);
+
+        .nav__icons {
+            @include flex(flex, row);
+            .nav__icon {
+                color: $g3;
+                font-size: 4rem;
+                width: 5rem;
+            }
+            .nav__icon--menu {
+                @include mquery(tland) {
+                    display: none;
+                }
+                @include mquery(desk) {
+                    display: none;
+                }
+                @include mquery(bigdesk) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
